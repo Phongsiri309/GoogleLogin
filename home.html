@@ -16,8 +16,14 @@
         console.log("Name: " + profile.getName());
         console.log("Image URL: " + profile.getImageUrl());
         console.log("Email: " + profile.getEmail()); // This is null if the 'email' scope is not present.
-        document.getElementById("Name").innerHTML = profile.getName;
-        document.getElementById("Name").innerHTML = profile.getEmail;
+        var Name = profile.getName();
+        var Email = profile.getEmail();
+        var dataN = (document.getElementById("Name").innerHTML = Name);
+        var dataE = (document.getElementById("Eemail").innerHTML = Emil);
+        return {
+          dataN,
+          dataE,
+        };
       }
       function signOut() {
         var auth2 = gapi.auth2.getAuthInstance();
