@@ -19,10 +19,9 @@
         var Name = profile.getName();
         var Email = profile.getEmail();
         var dataN = (document.getElementById("Name").innerHTML = Name);
-        var dataE = (document.getElementById("Email").innerHTML = Emil);
+        document.getElementById("Email").innerHTML = Emil;
         return {
           dataN,
-          dataE,
         };
       }
       function signOut() {
